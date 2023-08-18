@@ -11,4 +11,8 @@ body,
   height: 100%;
   background-color: #010026;
   @apply text-white;
+  user-select: none;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
