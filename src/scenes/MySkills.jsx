@@ -3,7 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import LineGradient from "../components/LineGradient";
 
 const MySkills = () => {
-  const isAboveMediumScreens = useMediaQuery("min-width:1060px");
+  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
     <section id='skills' className='pt-10 pb-24'>
       {/* HEADER AND IMAGE SECTION */}
@@ -24,8 +24,11 @@ const MySkills = () => {
           </p>
           <LineGradient width='w-1/3' />
           <p className='mt-10 mb-7'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est soluta
-            provident odio laboriosam labore, dolor quis voluptate a molestias
+            I am a MERN Stack Developer skilled in React, Node.js, Express, and
+            MongoDB. I specialize in creating seamless web applications by
+            combining dynamic front-end interfaces with robust back-end
+            functionalities. My focus on user-friendly design and efficient
+            coding allows me to deliver engaging and responsive applications.{" "}
           </p>
         </motion.div>
         <div className='mt-16 md:mt-0'>
@@ -54,7 +57,7 @@ const MySkills = () => {
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
@@ -67,8 +70,71 @@ const MySkills = () => {
                 Experience
               </p>
             </div>
-            <div className='w-1/2'></div>
+            <div className='w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]' />
           </div>
+          <p className='mt-5'>
+            Experienced in the MERN stack, I excel in developing seamless web
+            apps with MongoDB, Express.js, React, and Node.js. From dynamic
+            front-end design to robust back-end solutions and efficient MongoDB
+            data management, I consistently deliver user-focused applications.
+          </p>
+        </motion.div>
+        {/* Innovative */}
+        <motion.div
+          className='md:w-1/3 mt-10'
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className='relative h-32'>
+            <div className='z-10'>
+              <p className='font-playfair font-semibold text-5xl'>02</p>
+              <p className='font-playfair font-semibold text-3xl mt-3'>
+                Innovative
+              </p>
+            </div>
+            <div className='w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]' />
+          </div>
+          <p className='mt-5'>
+            In the MERN stack, I prioritize innovation, using MongoDB,
+            Express.js, React, and Node.js to create imaginative web
+            applications. By integrating technology and design, I deliver
+            inventive solutions that anticipate trends and offer engaging user
+            experiences.
+          </p>
+        </motion.div>
+        {/* IMAGINATIVE */}
+        <motion.div
+          className='md:w-1/3 mt-10'
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className='relative h-32'>
+            <div className='z-10'>
+              <p className='font-playfair font-semibold text-5xl'>03</p>
+              <p className='font-playfair font-semibold text-3xl mt-3'>
+                Imaginative
+              </p>
+            </div>
+            <div className='w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]' />
+          </div>
+          <p className='mt-5'>
+            Within the MERN stack, I employ imaginative thinking to construct
+            web applications that transcend conventions. Through the fusion of
+            React, I create unique and captivating digital experiences that push
+            the boundaries of what can be achieved in web development.
+          </p>
         </motion.div>
       </div>
     </section>
